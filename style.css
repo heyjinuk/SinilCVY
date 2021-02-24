@@ -120,7 +120,7 @@
 /*sub_banner*/
 .sub_banner1 { }
 .sub_banner1 .visual1 {height: 256px; line-height: 256px;}
-.sub_banner1 .visual1.product {background: url(../img/productbanner.jpg) no-repeat center top;}
+.sub_banner1 .visual1.product {background: url(img/productbanner.jpg) no-repeat center top;}
 .sub_banner1 .visual1 h2 {color: #fff; font-size: 45px; text-transform: uppercase; font-weight: normal;}
 
 .sub_banner1 .breadcrumb {overflow:hidden; height: 48px; line-height: 48px; background-color: #eaeaea;}
