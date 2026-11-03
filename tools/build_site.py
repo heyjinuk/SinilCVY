@@ -487,8 +487,11 @@ def extras():
          "/product.html  /product/  301", "/product  /product/  301",
          "/overview.html  /about/overview  301", "/overview  /about/overview  301",
          "/about/sub.html  /about/overview  301", "/about/sub  /about/overview  301",
-         "/product/테이퍼.html  /product/taper  301", "/product/테이퍼  /product/taper  301",
-         "/테이퍼.html  /product/taper  301", "/테이퍼  /product/taper  301"]
+         ]
+    from urllib.parse import quote
+    for k in ["테이퍼", quote("테이퍼")]:
+        r += [f"/product/{k}.html  /product/taper  301", f"/product/{k}  /product/taper  301",
+              f"/{k}.html  /product/taper  301", f"/{k}  /product/taper  301"]
     for s in ["MR", "BR", "chain", "accum", "idler", "impact", "pully", "pully2", "pully3", "return", "ringbelt"]:
         r += [f"/{s}.html  /product/{s.lower()}  301", f"/{s}  /product/{s.lower()}  301"]
         if s != s.lower():
