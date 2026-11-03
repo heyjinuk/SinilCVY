@@ -250,7 +250,7 @@ def page_index():
         <a class="btn" href="/contact">견적 문의하기</a>
         <a class="btn ghost" href="/product/">제품 보기</a>
       </div>
-      <p class="tel">전화 문의 <a href="tel:{COMPANY['tel']}">{COMPANY['tel']}</a></p>
+      <p class="tel">전화 문의 <a href="tel:{COMPANY['tel']}">{COMPANY['tel']}</a><br>팩스 문의 <strong>{COMPANY['fax']}</strong></p>
     </div>
     <figure><img src="/img/main_slider01.jpg" alt="신일콘베어에서 제작한 컨베이어 롤러" width="1121" height="760"></figure>
   </div>

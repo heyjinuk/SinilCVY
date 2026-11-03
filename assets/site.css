@@ -61,7 +61,7 @@ p { margin: 0 0 1em; }
 .hero .lead { font-size: 19px; color: var(--steel); margin: 24px 0 32px; max-width: 30em; }
 .hero .actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .hero .tel { margin-top: 20px; color: var(--steel); font-size: 16px; }
-.hero .tel a { font-weight: 700; color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+.hero .tel a, .hero .tel strong { font-weight: 700; color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
 .hero figure { margin: 0; }
 .hero figure img { width: 100%; border-radius: 2px; }
 .hero-drawing { background: var(--zinc); padding: 28px 20px; border-top: 2px solid var(--ink); }
