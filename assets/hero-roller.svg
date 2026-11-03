@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="t">
+  <title id="t">컨베이어 롤러 단면 도면</title>
+  <defs>
+    <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#1e252d" stroke-width="1.2"/>
+    </pattern>
+    <pattern id="hatch2" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#56616b" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="pipe" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f6f7"/>
+      <stop offset="0.35" stop-color="#c9d0d6"/>
+      <stop offset="1" stop-color="#7b8690"/>
+    </linearGradient>
+    <linearGradient id="shaft" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#dfe4e8"/>
+      <stop offset="1" stop-color="#8a959e"/>
+    </linearGradient>
+    <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0 1 L10 5 L0 9 z" fill="#1e252d"/>
+    </marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0 1 L10 5 L0 9 z" fill="#cf1f29"/>
+    </marker>
+  </defs>
+
+  <!-- 바깥 모습 (아래 절반) -->
+  <rect x="60" y="230" width="52" height="16" fill="url(#shaft)" stroke="#1e252d" stroke-width="1.5"/>
+  <rect x="608" y="230" width="52" height="16" fill="url(#shaft)" stroke="#1e252d" stroke-width="1.5"/>
+  <path d="M112 230 H608 V318 Q608 330 596 330 H124 Q112 330 112 318 Z" fill="url(#pipe)" stroke="#1e252d" stroke-width="1.8"/>
+  <line x1="124" y1="236" x2="124" y2="330" stroke="#56616b" stroke-width="1"/>
+  <line x1="596" y1="236" x2="596" y2="330" stroke="#56616b" stroke-width="1"/>
+
+  <!-- 단면 (위 절반) -->
+  <path d="M112 230 V142 Q112 130 124 130 H596 Q608 130 608 142 V230" fill="#ffffff" stroke="#1e252d" stroke-width="1.8"/>
+  <rect x="113" y="131" width="494" height="8" fill="url(#hatch)"/>
+  <line x1="112" y1="139" x2="608" y2="139" stroke="#1e252d" stroke-width="1.2"/>
+  <!-- 하우징 -->
+  <rect x="113" y="139" width="49" height="75" fill="url(#hatch2)" stroke="#1e252d" stroke-width="1.4"/>
+  <rect x="558" y="139" width="49" height="75" fill="url(#hatch2)" stroke="#1e252d" stroke-width="1.4"/>
+  <!-- 베어링 -->
+  <g stroke="#1e252d" stroke-width="1.4" fill="#ffffff">
+    <rect x="122" y="184" width="28" height="30"/>
+    <line x1="122" y1="184" x2="150" y2="214"/><line x1="150" y1="184" x2="122" y2="214"/>
+    <rect x="570" y="184" width="28" height="30"/>
+    <line x1="570" y1="184" x2="598" y2="214"/><line x1="598" y1="184" x2="570" y2="214"/>
+  </g>
+  <!-- 축 (단면) -->
+  <rect x="60" y="214" width="600" height="16" fill="#e9edf0" stroke="#1e252d" stroke-width="1.5"/>
+  <line x1="72" y1="214" x2="72" y2="246" stroke="#1e252d" stroke-width="1"/>
+  <line x1="648" y1="214" x2="648" y2="246" stroke="#1e252d" stroke-width="1"/>
+
+  <!-- 중심선 -->
+  <line x1="36" y1="230" x2="684" y2="230" stroke="#56616b" stroke-width="1" stroke-dasharray="18 4 3 4"/>
+
+  <!-- 치수: 롤러 길이 L (강조) -->
+  <g stroke="#cf1f29" stroke-width="1.2">
+    <line x1="112" y1="336" x2="112" y2="392"/>
+    <line x1="608" y1="336" x2="608" y2="392"/>
+    <line x1="114" y1="382" x2="606" y2="382" marker-start="url(#arrR)" marker-end="url(#arrR)" stroke-width="1.5"/>
+  </g>
+  <text x="360" y="372" text-anchor="middle" font-family="IBM Plex Sans KR, Apple SD Gothic Neo, Malgun Gothic, Noto Sans CJK KR, sans-serif" font-size="20" font-weight="700" fill="#cf1f29">L = 주문 사양</text>
+
+  <!-- 치수: 전체 길이 -->
+  <g stroke="#1e252d" stroke-width="1">
+    <line x1="60" y1="252" x2="60" y2="432"/>
+    <line x1="660" y1="252" x2="660" y2="432"/>
+    <line x1="62" y1="422" x2="658" y2="422" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  </g>
+  <text x="360" y="414" text-anchor="middle" font-family="IBM Plex Sans KR, Apple SD Gothic Neo, Malgun Gothic, Noto Sans CJK KR, sans-serif" font-size="16" fill="#1e252d">W (축 포함 전장)</text>
+
+  <!-- 치수: 파이프 외경 -->
+  <g stroke="#1e252d" stroke-width="1">
+    <line x1="614" y1="130" x2="704" y2="130"/>
+    <line x1="614" y1="330" x2="704" y2="330"/>
+    <line x1="694" y1="132" x2="694" y2="328" marker-start="url(#arr)" marker-end="url(#arr)"/>
+  </g>
+  <text x="684" y="236" text-anchor="middle" font-family="IBM Plex Sans KR, Apple SD Gothic Neo, Malgun Gothic, Noto Sans CJK KR, sans-serif" font-size="17" fill="#1e252d" transform="rotate(-90 684 236)">Ø38.1 ~ Ø60.5</text>
+
+  <!-- 지시선 -->
+  <g font-family="IBM Plex Sans KR, Apple SD Gothic Neo, Malgun Gothic, Noto Sans CJK KR, sans-serif" font-size="16" fill="#1e252d">
+    <line x1="136" y1="199" x2="96" y2="96" stroke="#1e252d" stroke-width="1"/>
+    <line x1="96" y1="96" x2="30" y2="96" stroke="#1e252d" stroke-width="1"/>
+    <circle cx="136" cy="199" r="2.5" fill="#1e252d"/>
+    <text x="30" y="88">베어링 6002ZZ</text>
+    <line x1="300" y1="135" x2="300" y2="70" stroke="#1e252d" stroke-width="1"/>
+    <line x1="300" y1="70" x2="480" y2="70" stroke="#1e252d" stroke-width="1"/>
+    <circle cx="300" cy="135" r="2.5" fill="#1e252d"/>
+    <text x="304" y="62">파이프: 스틸 · 스테인리스</text>
+    <line x1="470" y1="222" x2="520" y2="70" stroke="#1e252d" stroke-width="1"/>
+    <circle cx="470" cy="222" r="2.5" fill="#1e252d"/>
+    <line x1="520" y1="70" x2="640" y2="70" stroke="#1e252d" stroke-width="1"/>
+    <text x="530" y="62">축 Ø12 · Ø14</text>
+  </g>
+</svg>
