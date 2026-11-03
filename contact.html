@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>견적 문의 – 컨베이어 롤러 맞춤 제작 | 신일콘베어</title>
+<meta name="description" content="컨베이어 롤러·풀리 견적 문의. 롤러 종류와 사양, 수량, 도면 파일을 보내 주시면 신일콘베어가 확인 후 견적을 드립니다. 전화 02-2679-3225">
+<link rel="canonical" href="https://www.sinilconveyor.com/contact">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="신일콘베어">
+<meta property="og:title" content="견적 문의 – 컨베이어 롤러 맞춤 제작 | 신일콘베어">
+<meta property="og:description" content="컨베이어 롤러·풀리 견적 문의. 롤러 종류와 사양, 수량, 도면 파일을 보내 주시면 신일콘베어가 확인 후 견적을 드립니다. 전화 02-2679-3225">
+<meta property="og:url" content="https://www.sinilconveyor.com/contact">
+<meta property="og:image" content="https://www.sinilconveyor.com/img/main_slider01.jpg">
+<meta property="og:locale" content="ko_KR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">본문 바로가기</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="/"><img src="/img/logo_top.gif" alt="신일콘베어" width="184" height="54"></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">메뉴</button>
+    <nav class="nav" id="nav" aria-label="주 메뉴"><a href="/product/">제품</a><a href="/#facilities">가공 설비</a><a href="/about/overview">회사소개</a><a class="btn" href="/contact">견적 문의</a></nav>
+  </div>
+</header>
+
+<main id="main">
+<div class="page-head"><div class="wrap">
+  <p class="crumbs"><a href="/">홈</a> / 견적 문의</p>
+  <h1>견적 문의<small>Request a quote</small></h1>
+  <p class="lead">롤러 종류와 사양, 수량을 남겨 주시면 확인 후 연락드립니다. 도면 파일을 첨부하시면 더 정확한 견적을 드릴 수 있습니다.</p>
+</div></div>
+<div class="wrap contact-layout">
+  <form name="quote" method="POST" action="/contact-thanks" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data">
+    <input type="hidden" name="form-name" value="quote">
+    <p class="hp"><label>입력하지 마세요 <input name="bot-field"></label></p>
+    <div class="form-grid">
+      <div class="field"><label for="company">회사명 <span class="req">*</span></label><input id="company" name="company" required autocomplete="organization"></div>
+      <div class="field"><label for="person">담당자 <span class="req">*</span></label><input id="person" name="person" required autocomplete="name"></div>
+      <div class="field"><label for="phone">연락처 <span class="req">*</span></label><input id="phone" name="phone" type="tel" required autocomplete="tel" inputmode="tel"></div>
+      <div class="field"><label for="email">이메일</label><input id="email" name="email" type="email" autocomplete="email"></div>
+      <div class="field"><label for="product">제품 종류</label><select id="product" name="product"><option value="">선택해 주세요</option><option value="mr">MR 롤러</option><option value="br">BR 롤러</option><option value="chain">스프라켓 롤러</option><option value="accum">어큐뮬레이션 롤러</option><option value="ringbelt">링벨트 롤러</option><option value="taper">테이퍼 롤러</option><option value="return">캐리어·리턴 롤러</option><option value="idler">자동조심 롤러</option><option value="impact">임팩트 롤러</option><option value="pully">헤드·테일 풀리</option><option value="pully2">스냅 풀리</option><option value="pully3">특수처리 풀리</option><option value="etc">기타 / 잘 모르겠음</option></select></div>
+      <div class="field"><label for="qty">수량</label><input id="qty" name="qty" placeholder="예: 200개"></div>
+      <div class="field full"><label for="message">요청 사양 <span class="req">*</span></label><textarea id="message" name="message" required placeholder="파이프 외경, 길이, 축 지름, 재질, 납기 등 아는 만큼 적어 주세요."></textarea></div>
+      <div class="field full"><label for="file">도면·사양 파일</label><input id="file" name="file" type="file" accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png,.xlsx,.xls,.zip"><span class="hint">PDF, DWG, DXF, 이미지, 엑셀 파일 한 개 (8MB 이하). 여러 개면 압축해서 올려 주세요.</span></div>
+      <div class="consent">
+        <p style="margin:0">수집 항목: 회사명, 담당자, 연락처, 이메일 · 이용 목적: 견적 회신과 상담 · 보유 기간: 문의 처리 후 1년. 동의하지 않으면 견적 문의를 보낼 수 없습니다.</p>
+        <label><input type="checkbox" name="consent" value="동의" required> 개인정보 수집·이용에 동의합니다</label>
+      </div>
+      <div class="field full"><button class="btn" type="submit">견적 문의 보내기</button></div>
+    </div>
+  </form>
+  <aside class="contact-aside">
+    <h2 style="font-size:20px;margin-bottom:12px">전화·메일로 문의</h2>
+    <dl>
+      <dt>전화</dt><dd><a href="tel:02-2679-3225">02-2679-3225</a></dd>
+      <dt>팩스</dt><dd>02-2679-9635</dd>
+      <dt>이메일</dt><dd><a href="mailto:sinil3359@daum.net">sinil3359@daum.net</a></dd>
+    </dl>
+    <p class="note" style="margin-top:16px">경기도 김포시 하성면 원산로 9</p>
+  </aside>
+</div>
+</main>
+<script>
+(function(){var m=location.search.match(/product=([a-z0-9]+)/),s=document.getElementById('product');
+if(m&&s){for(var i=0;i<s.options.length;i++)if(s.options[i].value===m[1])s.selectedIndex=i;}})();
+</script>
+<footer class="site-footer">
+  <div class="wrap">
+    <img src="/img/logo_top.gif" alt="" width="184" height="54">
+    <div>
+      <p>신일콘베어㈜ · 대표 김복선</p>
+      <p>본사(제1공장) 경기도 김포시 하성면 원산로 9 · 제2공장 경기도 김포시 통진읍 서암로 183번길 36-22</p>
+      <p>전화 <a href="tel:02-2679-3225">02-2679-3225</a> · 팩스 02-2679-9635 · <a href="mailto:sinil3359@daum.net">sinil3359@daum.net</a></p>
+      <p>© Sinil Conveyor Inc.</p>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){var b=document.querySelector('.menu-toggle'),n=document.getElementById('nav');
+if(!b||!n)return;b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');});})();
+</script>
+</body>
+</html>
