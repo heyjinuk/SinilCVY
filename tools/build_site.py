@@ -237,6 +237,7 @@ def page_index():
                     "addressRegion": "경기도", "addressCountry": "KR"},
     }
     ld = f'<script type="application/ld+json">{json.dumps(org, ensure_ascii=False)}</script>\n'
+    ld = '<meta name="google-site-verification" content="c55yz4JA-CrTagRvwGeRZq8YIqLQypFl5LWIzl6fDh4">\n' + ld
     body = f"""{header()}
 <main id="main">
 <section class="hero">
