@@ -154,7 +154,7 @@ def head(title, desc, path, extra=""):
 """
 
 
-NAV = [("/product/", "제품"), ("/#facilities", "가공 설비"), ("/about/overview", "회사소개")]
+NAV = [("/about/overview", "회사소개"), ("/product/", "제품"), ("/#facilities", "가공 설비")]
 
 
 def header(active=""):
