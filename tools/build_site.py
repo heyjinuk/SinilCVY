@@ -378,18 +378,31 @@ def page_about():
 <div class="page-head"><div class="wrap">
   <p class="crumbs"><a href="/">홈</a> / 회사소개</p>
   <h1>회사소개<small>About us</small></h1>
-  <p class="lead">신일콘베어㈜는 컨베이어 롤러 한 가지에 집중해 온 컨베이어 롤러 전문 제조업체입니다.</p>
+  <p class="lead">컨베이어 롤러가 필요할 때, 사양만 주시면 나머지는 신일콘베어가 책임집니다. 30년 넘게 컨베이어 롤러 한 길만 걸어온 전문 제조사로서, 원하시는 사양과 납기에 정확히 맞춰 만들고 100% 검수한 제품만 내보냅니다.</p>
 </div></div>
 <section class="section"><div class="wrap split">
-  <div>
-    <h2 style="font-size:26px;margin-bottom:20px">대표 인사말</h2>
-    <p>신일콘베어㈜는 설립 이래 대한민국 컨베이어 롤러 제조에 전념해 왔습니다. 꾸준한 설비 투자와 기술 개발로 컨베이어 산업과 함께 성장해 왔고, 오랜 시간 쌓은 노하우와 인프라를 바탕으로 연간 수백 개 고객사에 롤러를 납품하고 있습니다.</p>
-    <p>CNC·MCT 가공과 레이저·CO2·알곤 용접 등 설비를 계속 늘려 컨베이어 산업 전반으로 공급 범위를 넓혀 가고 있습니다. 앞으로도 정직과 신뢰를 바탕으로 품질과 기술력을 높여 가겠습니다.</p>
-    <p style="font-weight:700;margin-top:24px">{c['name']} 대표이사 {c['ceo']}</p>
+  <div class="section-head">
+    <h2>신일콘베어를 선택하는 이유</h2>
+    <div class="dim" aria-hidden="true"></div>
+    <p>연간 수백 개 컨베이어 제작업체가 신일콘베어 롤러로 라인을 완성합니다. 규격품이든 처음 보는 사양이든, 한 곳에서 빠르고 정확하게 해결하기 때문입니다.</p>
   </div>
-  <figure class="about-photo"><img src="/img/overview_main.png" alt="신일콘베어 공장 전경" width="1920" height="600" loading="lazy"></figure>
+  <ul class="facts">
+    <li><strong>원하는 사양 그대로</strong><span>파이프 외경, 길이, 축, 재질, 스프라켓까지 도면 한 장이면 맞춤 제작합니다.</span></li>
+    <li><strong>원하는 날짜에</strong><span>축 가공부터 스프라켓, 용접, 조립까지 공장 안에서 직접 하기 때문에 외주를 기다릴 일이 없습니다.</span></li>
+    <li><strong>100% 검수 후 납품</strong><span>샘플 검사가 아니라 모든 제품을 하나하나 검수한 뒤 내보냅니다.</span></li>
+    <li><strong>롤러부터 풀리까지</strong><span>자동화 롤러, 산업용 롤러, 풀리 12종을 한 곳에서 공급합니다.</span></li>
+    <li><strong>직접 보유한 설비</strong><span>CNC·MCT 가공, 호빙, 레이저·CO2·알곤 용접</span></li>
+  </ul>
 </div></section>
-<section class="section alt"><div class="wrap">
+<section class="section alt"><div class="wrap" style="max-width:820px">
+  <div class="section-head"><h2>대표 인사말</h2><div class="dim" aria-hidden="true"></div></div>
+  <p style="font-size:20px;font-weight:700;line-height:1.5;margin-bottom:24px">"좋은 컨베이어는 좋은 롤러에서 시작합니다. 그 롤러를 가장 잘 만드는 회사가 되겠습니다."</p>
+  <p>신일콘베어㈜는 설립 이래 30년 넘게 컨베이어 롤러 하나에만 집중해 왔습니다. 그 시간 동안 쌓은 노하우로 지금은 연간 수백 개 고객사의 컨베이어 라인에 롤러를 납품하고 있습니다.</p>
+  <p>저희가 고객사에 드리는 약속은 분명합니다. 원하시는 사양 그대로, 원하시는 날짜에, 100% 검수한 제품으로 납품하는 것입니다. 이 약속을 지키기 위해 CNC·MCT 가공, 호빙, 레이저·CO2·알곤 용접 설비를 직접 갖추고 모든 공정을 공장 안에서 책임지고 있습니다.</p>
+  <p>규격품이 맞지 않아 고민이시거나, 납기가 급하시거나, 지금 쓰는 롤러의 품질이 아쉬우시다면 신일콘베어에 맡겨 주십시오. 도면 한 장, 전화 한 통이면 충분합니다. 고객사의 라인이 멈추지 않도록 끝까지 책임지겠습니다.</p>
+  <p style="font-weight:700;margin-top:24px">{c['name']} 대표이사 {c['ceo']}</p>
+</div></section>
+<section class="section"><div class="wrap">
   <div class="section-head"><h2>오시는 길</h2><div class="dim" aria-hidden="true"></div></div>
   <div class="sites">
     <div class="site-card">
@@ -409,7 +422,7 @@ def page_about():
 </main>
 {contact_band()}{FOOTER}"""
     write("about/overview.html", head(f"회사소개 – 김포 컨베이어 롤러 제조 | {BRAND}",
-                                      "신일콘베어㈜는 컨베이어 롤러 전문 제조업체로, 원하시는 사양과 납기에 맞춰 주문 제작하고 100% 검수 후 연간 수백 개 고객사에 납품합니다. 회사소개와 공장 위치 안내.",
+                                      "30년 넘게 컨베이어 롤러만 만들어 온 신일콘베어㈜. 원하시는 사양과 납기에 맞춰 주문 제작하고 100% 검수 후 연간 수백 개 고객사에 납품합니다. 회사소개와 오시는 길.",
                                       "/about/overview") + body)
 
 
