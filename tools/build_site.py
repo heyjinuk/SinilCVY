@@ -238,6 +238,7 @@ def page_index():
     }
     ld = f'<script type="application/ld+json">{json.dumps(org, ensure_ascii=False)}</script>\n'
     ld = '<meta name="google-site-verification" content="c55yz4JA-CrTagRvwGeRZq8YIqLQypFl5LWIzl6fDh4">\n' + ld
+    ld = '<meta name="naver-site-verification" content="1f1eea4c51ad94bf7c3e667ee94fbaf2213dd669">\n' + ld
     body = f"""{header()}
 <main id="main">
 <section class="hero">
