@@ -250,7 +250,7 @@ def page_index():
       </div>
       <p class="tel">전화 문의 <a href="tel:{COMPANY['tel']}">{COMPANY['tel']}</a></p>
     </div>
-    <figure class="hero-drawing"><img src="/assets/hero-roller.svg" alt="컨베이어 롤러 단면 도면 – 파이프 외경, 축 지름, 롤러 길이를 주문 사양에 맞춰 제작" width="720" height="460"></figure>
+    <figure><img src="/img/main_slider01.jpg" alt="신일콘베어에서 제작한 컨베이어 롤러" width="1121" height="760"></figure>
   </div>
 </section>
 
