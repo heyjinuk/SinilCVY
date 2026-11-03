@@ -243,7 +243,7 @@ def page_index():
   <div class="wrap">
     <div>
       <h1>컨베이어 롤러,<br>사양대로 맞춰 만듭니다</h1>
-      <p class="lead">MR·BR·스프라켓 롤러부터 캐리어·리턴 롤러, 풀리까지. 김포 공장에서 30년 넘게 컨베이어 롤러를 만들어 왔고, 지금은 연간 1,000여 고객사에 공급하고 있습니다.</p>
+      <p class="lead">MR·BR·스프라켓 롤러부터 캐리어·리턴 롤러, 풀리까지. 원하시는 사양과 납기에 맞춰 주문 제작하고, 100% 검수를 마친 뒤 납품합니다. 30년 넘게 컨베이어 롤러를 만들어 왔고, 지금은 연간 수백 개 고객사에 납품하고 있습니다.</p>
       <div class="actions">
         <a class="btn" href="/contact">견적 문의하기</a>
         <a class="btn ghost" href="/product/">제품 보기</a>
@@ -274,8 +274,8 @@ def page_index():
     <ol class="steps">
       <li><strong>문의</strong><span>도면이나 롤러 종류, 외경, 길이, 수량을 보내 주세요.</span></li>
       <li><strong>사양 확인·견적</strong><span>필요한 부분을 확인하고 견적을 드립니다.</span></li>
-      <li><strong>제작</strong><span>확정된 사양으로 김포 공장에서 가공·조립합니다.</span></li>
-      <li><strong>납품</strong><span>검사를 마친 제품을 약속한 날짜에 보내 드립니다.</span></li>
+      <li><strong>주문 제작</strong><span>확정된 사양과 납기에 맞춰 가공·조립합니다.</span></li>
+      <li><strong>검수·납품</strong><span>모든 제품을 100% 검수한 뒤 약속한 날짜에 납품합니다.</span></li>
     </ol>
   </div>
 </section>
@@ -285,20 +285,20 @@ def page_index():
     <div class="section-head">
       <h2>가공 설비</h2>
       <div class="dim" aria-hidden="true"></div>
-      <p>롤러에 들어가는 축, 스프라켓, 용접까지 공장 안에서 직접 가공합니다. 그래서 규격에 없는 사양도 빠르게 맞출 수 있습니다.</p>
+      <p>롤러에 들어가는 축 가공, 스프라켓 치형, 용접까지 공장 안에서 직접 합니다. 그래서 규격에 없는 사양도 원하시는 납기에 맞출 수 있습니다.</p>
     </div>
     <ul class="facts">
       <li><strong>CNC·MCT 가공</strong><span>축, 하우징, 풀리 등 정밀 부품 가공</span></li>
       <li><strong>호빙 가공</strong><span>스프라켓 치형 가공</span></li>
-      <li><strong>레이저 용접</strong><span>파이프와 하우징 접합 용접</span></li>
-      <li><strong>롤러 조립</strong><span>베어링 압입, 파이프 가공, 최종 조립과 검사</span></li>
+      <li><strong>용접</strong><span>레이저 용접, CO2 용접, 알곤(TIG) 용접 – 파이프·하우징·축·브라켓 접합</span></li>
+      <li><strong>롤러 조립</strong><span>베어링 압입, 파이프 가공, 최종 조립과 100% 검수</span></li>
     </ul>
   </div>
 </section>
 </main>
 {contact_band()}{FOOTER}"""
     write("index.html", head(f"컨베이어 롤러 제작 전문 | {BRAND}",
-                             "신일콘베어는 30년 넘게 컨베이어 롤러를 전문으로 제작해 온 김포 소재 제조업체입니다. MR·BR·스프라켓·어큐뮬레이션·링벨트·테이퍼 롤러와 캐리어·리턴·임팩트 롤러, 풀리를 규격에 맞춰 맞춤 제작합니다.",
+                             "신일콘베어는 30년 넘게 컨베이어 롤러를 전문으로 제작해 온 제조업체로, 원하시는 사양과 납기에 맞춰 주문 제작하고 100% 검수 후 납품합니다. MR·BR·스프라켓·어큐뮬레이션·링벨트·테이퍼 롤러와 캐리어·리턴·임팩트 롤러, 풀리를 규격에 맞춰 맞춤 제작합니다.",
                              "/", ld) + body)
 
 
@@ -383,11 +383,11 @@ def page_about():
 <section class="section"><div class="wrap split">
   <div>
     <h2 style="font-size:26px;margin-bottom:20px">대표 인사말</h2>
-    <p>신일콘베어㈜는 설립 이래 대한민국 컨베이어 롤러 제조에 전념해 왔습니다. 꾸준한 설비 투자와 기술 개발로 컨베이어 산업과 함께 성장해 왔고, 오랜 시간 쌓은 노하우와 인프라를 바탕으로 연간 1,000여 고객사에 롤러를 공급하고 있습니다.</p>
-    <p>CNC 등 가공 설비를 계속 늘려 컨베이어 산업 전반으로 공급 범위를 넓혀 가고 있습니다. 앞으로도 정직과 신뢰를 바탕으로 품질과 기술력을 높여 가겠습니다.</p>
+    <p>신일콘베어㈜는 설립 이래 대한민국 컨베이어 롤러 제조에 전념해 왔습니다. 꾸준한 설비 투자와 기술 개발로 컨베이어 산업과 함께 성장해 왔고, 오랜 시간 쌓은 노하우와 인프라를 바탕으로 연간 수백 개 고객사에 롤러를 납품하고 있습니다.</p>
+    <p>CNC·MCT 가공과 레이저·CO2·알곤 용접 등 설비를 계속 늘려 컨베이어 산업 전반으로 공급 범위를 넓혀 가고 있습니다. 앞으로도 정직과 신뢰를 바탕으로 품질과 기술력을 높여 가겠습니다.</p>
     <p style="font-weight:700;margin-top:24px">{c['name']} 대표이사 {c['ceo']}</p>
   </div>
-  <figure class="about-photo"><img src="/img/overview_main.png" alt="신일콘베어 김포 공장 전경" width="1920" height="600" loading="lazy"></figure>
+  <figure class="about-photo"><img src="/img/overview_main.png" alt="신일콘베어 공장 전경" width="1920" height="600" loading="lazy"></figure>
 </div></section>
 <section class="section alt"><div class="wrap">
   <div class="section-head"><h2>오시는 길</h2><div class="dim" aria-hidden="true"></div></div>
@@ -409,7 +409,7 @@ def page_about():
 </main>
 {contact_band()}{FOOTER}"""
     write("about/overview.html", head(f"회사소개 – 김포 컨베이어 롤러 제조 | {BRAND}",
-                                      "신일콘베어㈜는 컨베이어 롤러 전문 제조업체로, 경기도 김포시 하성면 본사 공장에서 연간 1,000여 고객사에 컨베이어 롤러를 공급합니다. 회사소개와 공장 위치 안내.",
+                                      "신일콘베어㈜는 컨베이어 롤러 전문 제조업체로, 원하시는 사양과 납기에 맞춰 주문 제작하고 100% 검수 후 연간 수백 개 고객사에 납품합니다. 회사소개와 공장 위치 안내.",
                                       "/about/overview") + body)
 
 
